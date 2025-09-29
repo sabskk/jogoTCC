@@ -1,1 +1,14 @@
-image_alpha -= 0.1;
+image_alpha = 0;
+
+if (play == 1) {
+	if (fade < 1){
+		fade += 0.01;
+		image_alpha = fade;
+	}
+	else if (fade == 1) {
+		fade -= 0.01;
+		image_alpha = fade;
+		room_goto(Combate);
+		play = 0;
+	}
+}
