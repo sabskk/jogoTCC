@@ -7,3 +7,5 @@ action = 0;
 damage = 0;
 healing = 0;
 manaRestore = 0;
+
+virando = false;
