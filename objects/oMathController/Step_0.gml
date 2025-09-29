@@ -1,0 +1,101 @@
+// oMathController - Step Event
+
+// Se há matemática pendente, ativar
+if (pendingMath) {
+    active = true;
+    pendingMath = false;
+    playerAnswer = ""; // Limpar resposta anterior
+    show_debug_message("Matemática ativada! Aguardando resposta...");
+}
+
+if (active) {
+    // Input numérico
+    for (var i = 0; i <= 9; i++) {
+        if (keyboard_check_pressed(ord(string(i)))) {
+            if (string_length(playerAnswer) < 3) {
+                playerAnswer += string(i);
+            }
+        }
+    }
+    
+    // Backspace para apagar
+    if (keyboard_check_pressed(vk_backspace)) {
+        if (string_length(playerAnswer) > 0) {
+            playerAnswer = string_copy(playerAnswer, 1, string_length(playerAnswer) - 1);
+        }
+    }
+    
+    // Enter para confirmar resposta
+    if (keyboard_check_pressed(vk_enter) && playerAnswer != "") {
+        var playerNum = real(playerAnswer);
+        var actionSuccess = false;
+        
+        if (playerNum == result) {
+            actionSuccess = true;
+            show_debug_message($"Correto! {num1} {operation} {num2} = {result}");
+        } else {
+            show_debug_message($"Errado! Era {result}, você respondeu {playerNum}");
+        }
+        
+        // Executar ação baseada no currentAction
+        if (currentAction == "attack") {
+            // Gastar mana sempre
+            oPlayer.playerMP = max(0, oPlayer.playerMP - 5);
+            
+            if (actionSuccess) {
+                var damage = irandom_range(12, 20);
+                oEnemy.enemyHP -= damage;
+                show_debug_message($"Você atacou! Dano: {damage}");
+            } else {
+                show_debug_message("Você errou e gastou 5 MP!");
+            }
+        }
+        else if (currentAction == "strong_attack") {
+            // Gastar mana sempre
+            oPlayer.playerMP = max(0, oPlayer.playerMP - 10);
+            
+            if (actionSuccess) {
+                var damage = irandom_range(25, 35);
+                oEnemy.enemyHP -= damage;
+                show_debug_message($"Ataque forte! Dano: {damage}");
+            } else {
+                show_debug_message("Você errou e gastou 10 MP!");
+            }
+        }
+        else if (currentAction == "heal") {
+            // Gastar mana sempre
+            oPlayer.playerMP = max(0, oPlayer.playerMP - 8);
+            
+            if (actionSuccess) {
+                var healing = irandom_range(20, 30);
+                oPlayer.playerHP = min(oPlayer.playerMaxHP, oPlayer.playerHP + healing);
+                show_debug_message($"Você se curou! +{healing} HP");
+            } else {
+                show_debug_message("Você errou e gastou 8 MP!");
+            }
+        }
+        else if (currentAction == "restore_mana") {
+            // Restaurar mana não gasta mana
+            if (actionSuccess) {
+                var manaRestore = irandom_range(15, 25);
+                oPlayer.playerMP = min(oPlayer.playerMaxMP, oPlayer.playerMP + manaRestore);
+                show_debug_message($"Mana restaurada! +{manaRestore} MP");
+            } else {
+                show_debug_message("Você errou! Nenhuma mana restaurada.");
+            }
+        }
+        
+        // Resetar variáveis
+        active = false;
+        playerAnswer = "";
+        currentAction = "";
+        num1 = 0;
+        num2 = 0;
+        result = 0;
+        operation = "";
+        
+        // Passar para o turno do inimigo
+        oController.currentTurn = "enemy";
+        show_debug_message("Turno passou para o inimigo");
+    }
+}
