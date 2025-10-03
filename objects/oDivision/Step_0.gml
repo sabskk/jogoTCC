@@ -7,6 +7,7 @@ if (position_meeting(mouse_x, mouse_y, self)) {
 // Verificar se tem mana suficiente
 if (oPlayer.playerMP < 10) {
     click = 0;
+	mana = 0;
     image_alpha = 0.5;
 } else {
     image_alpha = 1.0;
@@ -26,7 +27,7 @@ if (click == 1) {
     oMathController.num1 = num1;
     oMathController.num2 = num2;
     oMathController.result = result;
-    oMathController.operation = "÷";
+    oMathController.operation = "%";
     oMathController.currentAction = "strong_attack";
     oMathController.pendingMath = true;
     

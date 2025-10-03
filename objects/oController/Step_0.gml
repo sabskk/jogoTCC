@@ -1,5 +1,21 @@
 // oController - Step Event
 
+// Fullscreen
+if (keyboard_check_pressed(vk_f11)){
+    window_set_fullscreen(!window_get_fullscreen());
+}
+
+// Pausar música
+if (keyboard_check_pressed(vk_f10)) {
+    if (musicPaused) {
+        audio_resume_sound(sndBattleTheme);
+        musicPaused = false;
+    } else {
+        audio_pause_sound(sndBattleTheme);
+        musicPaused = true;
+    }
+}
+
 // Criar botões apenas durante o turno do jogador e quando não há matemática ativa
 if (currentTurn == "player" && !buttonsCreated && !oMathController.active) {
     if (!instance_exists(oAddition)) {

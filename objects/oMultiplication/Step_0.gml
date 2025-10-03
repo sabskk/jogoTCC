@@ -4,8 +4,13 @@ if (position_meeting(mouse_x, mouse_y, self)) {
     click = mouse_check_button_pressed(mb_left);
 }
 
-// Multiplicação não gasta mana (restaura mana)
-image_alpha = 1.0;
+// Player com mana cheia
+if (oPlayer.playerMP == oPlayer.playerMaxMP) {
+    click = 0;
+    image_alpha = 0.5;
+} else {
+    image_alpha = 1.0;
+}
 
 if (click == 1) {
     // Gerar números para multiplicação (resultado até 81)

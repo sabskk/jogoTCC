@@ -7,8 +7,10 @@ if (position_meeting(mouse_x, mouse_y, self)) {
 // Verificar se tem mana suficiente
 if (oPlayer.playerMP < 5) {
     click = 0;
+	mana = 0;
     image_alpha = 0.5;
 } else {
+	mana = 1;
     image_alpha = 1.0;
 }
 

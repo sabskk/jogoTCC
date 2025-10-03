@@ -2,5 +2,9 @@ draw_self()
 draw_set_font(gameFont);
 draw_set_halign(fa_center);
 draw_set_colour(c_white);
-draw_text(x, 30, "Inimigo");
-draw_text(x, 55, "Hp:"+string(enemyHP)+" | Mp:"+string(enemyMP));
+
+var status_name_y = 30;
+var status_hp_y = 55;
+
+draw_text(x, status_name_y, "Inimigo");
+draw_text(x, status_hp_y, "Hp:"+string(enemyHP)+" | Mp:"+string(enemyMP));

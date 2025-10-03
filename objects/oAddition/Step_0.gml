@@ -7,6 +7,16 @@ if (position_meeting(mouse_x, mouse_y, self)) {
 // Verificar se tem mana suficiente
 if (oPlayer.playerMP < 8) {
     click = 0;
+	mana = 0;
+    image_alpha = 0.5;
+} else {
+	mana = 1;
+    image_alpha = 1.0;
+}
+
+// Player com vida cheia
+if (oPlayer.playerHP == oPlayer.playerMaxHP) {
+    click = 0;
     image_alpha = 0.5;
 } else {
     image_alpha = 1.0;
