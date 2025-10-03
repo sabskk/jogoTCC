@@ -4,19 +4,13 @@ if (position_meeting(mouse_x, mouse_y, self)) {
     click = mouse_check_button_pressed(mb_left);
 }
 
-// Verificar se tem mana suficiente
-if (oPlayer.playerMP < 8) {
-    click = 0;
-	mana = 0;
-    image_alpha = 0.5;
-} else {
-	mana = 1;
-    image_alpha = 1.0;
-}
-
-// Player com vida cheia
+// Player com vida cheia ou se tem mana suficiente
 if (oPlayer.playerHP == oPlayer.playerMaxHP) {
     click = 0;
+    image_alpha = 0.5;
+} else if (oPlayer.playerMP < 8) {
+    click = 0;
+	mana = 0;
     image_alpha = 0.5;
 } else {
     image_alpha = 1.0;

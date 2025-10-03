@@ -39,7 +39,6 @@ if (active) {
     draw_text(center_x, hud_y + 85, "Digite e pressione ENTER"); // +70px pra baixo da pergunta
     
     // Reseta alinhamentos (p não afetar outra UI)
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_top);
-    draw_set_color(c_white);
+    draw_set_font(-1);
+	draw_set_alpha(1);
 }

@@ -98,4 +98,5 @@ if (active) {
         oController.currentTurn = "enemy";
         show_debug_message("Turno passou para o inimigo");
     }
+	
 }
