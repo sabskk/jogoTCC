@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemy",
+  "%Name":"oBoss2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemy",
+  "name":"oBoss2",
   "overriddenProperties":[],
   "parent":{
     "name":"Chars",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemy2",
-    "path":"sprites/sEnemy2/sEnemy2.yy",
+    "name":"sEnemy1",
+    "path":"sprites/sEnemy1/sEnemy1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

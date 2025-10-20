@@ -44,7 +44,7 @@ if (active) {
             
             if (actionSuccess) {
                 var damage = irandom_range(12, 20);
-                oEnemy.enemyHP -= damage;
+                oBoss1.enemyHP -= damage;
                 show_debug_message($"Você atacou! Dano: {damage}");
             } else {
                 show_debug_message("Você errou e gastou 5 MP!");
@@ -56,7 +56,7 @@ if (active) {
             
             if (actionSuccess) {
                 var damage = irandom_range(25, 35);
-                oEnemy.enemyHP -= damage;
+                oBoss1.enemyHP -= damage;
                 show_debug_message($"Ataque forte! Dano: {damage}");
             } else {
                 show_debug_message("Você errou e gastou 10 MP!");

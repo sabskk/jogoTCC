@@ -8,7 +8,7 @@ if (play == 1) {
 	else if (fade == 1) {
 		fade -= 0.01;
 		image_alpha = fade;
-		room_goto(Combate);
+		room_goto(Combate1);
 		play = 0;
 	}
 }
