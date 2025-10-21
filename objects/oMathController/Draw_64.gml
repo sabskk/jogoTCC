@@ -1,7 +1,5 @@
-// oMathController - Draw GUI Event
-
 if (active) {
-    // HUD positions
+    // Posições do HUD
     var center_x = display_get_gui_width() / 2;
     var hud_y = display_get_gui_height() - 122; // Start ~120px from bottom
     
@@ -26,11 +24,11 @@ if (active) {
     draw_sprite_stretched(bg_sprite, 0, box_x - (box_width / 2), box_y - (box_height / 2), 
                           box_width * box_scale, box_height * box_scale);
     
-    // Pergunta (topo do HUD, scaled)
+    // Pergunta (topo da HUD)
     var question = string(num1) + "  " + operation + "  " + string(num2) + "  =  ?";
     draw_text_transformed(center_x, hud_y, question, 1.5, 1.5, 0); // tamanho 1.5x
     
-    // Resposta (meio do HUD)
+    // Resposta (meio da HUD)
     var answer = (playerAnswer == "") ? "_" : playerAnswer;
     draw_text(center_x, hud_y + 30, "Resposta: " + answer); // 30px pra baixo da pergunta
     

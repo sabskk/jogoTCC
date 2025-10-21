@@ -1,6 +1,4 @@
-// oMathController - Step Event
-
-// Se há matemática pendente, ativar
+// Se precisa de matemática, ativar
 if (pendingMath) {
     active = true;
     pendingMath = false;
@@ -9,7 +7,7 @@ if (pendingMath) {
 }
 
 if (active) {
-    // Input numérico
+    // Input de número
     for (var i = 0; i <= 9; i++) {
         if (keyboard_check_pressed(ord(string(i)))) {
             if (string_length(playerAnswer) < 3) {
@@ -39,7 +37,7 @@ if (active) {
         
         // Executar ação baseada no currentAction
         if (currentAction == "attack") {
-            // Gastar mana sempre
+            // Gasta mana sempre
             oPlayer.playerMP = max(0, oPlayer.playerMP - 5);
             
             if (actionSuccess) {
@@ -50,8 +48,8 @@ if (active) {
                 show_debug_message("Você errou e gastou 5 MP!");
             }
         }
-        else if (currentAction == "strong_attack") {
-            // Gastar mana sempre
+        else if (currentAction == "strongAttack") {
+            // Gasta mana sempre
             oPlayer.playerMP = max(0, oPlayer.playerMP - 10);
             
             if (actionSuccess) {
@@ -63,7 +61,7 @@ if (active) {
             }
         }
         else if (currentAction == "heal") {
-            // Gastar mana sempre
+            // Gasta mana sempre
             oPlayer.playerMP = max(0, oPlayer.playerMP - 8);
             
             if (actionSuccess) {
@@ -74,7 +72,7 @@ if (active) {
                 show_debug_message("Você errou e gastou 8 MP!");
             }
         }
-        else if (currentAction == "restore_mana") {
+        else if (currentAction == "mana") {
             // Restaurar mana não gasta mana
             if (actionSuccess) {
                 var manaRestore = irandom_range(15, 25);
@@ -85,7 +83,7 @@ if (active) {
             }
         }
         
-        // Resetar variáveis
+        // Reseta variáveis
         active = false;
         playerAnswer = "";
         currentAction = "";
@@ -94,7 +92,7 @@ if (active) {
         result = 0;
         operation = "";
         
-        // Passar para o turno do inimigo
+        // Passa para o turno do inimigo
         oController.currentTurn = "enemy";
         show_debug_message("Turno passou para o inimigo");
     }

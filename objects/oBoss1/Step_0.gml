@@ -1,5 +1,3 @@
-// oEnemy - Step Event
-
 if(!virando) image_angle += 0.05;
 else if(virando)image_angle -= 0.05;
 if(image_angle >= 3) virando = true;
@@ -15,19 +13,14 @@ if (oController.currentTurn == "enemy") {
         show_debug_message($"Timer definido para: {actionTimer}");
     }
     
-    // Contar regressivo
+    // Contagem regressiva
     actionTimer--;
     
-    // Debug a cada 15 frames
-    if (actionTimer % 15 == 0) {
-        show_debug_message($"Timer do inimigo: {actionTimer}");
-    }
-    
-    // Quando chegar a 0, executar ação
+    // Quando chegar a 0, executa
     if (actionTimer == 0) {
         show_debug_message("=== EXECUTANDO AÇÃO DO INIMIGO ===");
         
-        // Ação simples por enquanto - apenas ataque
+        // Ação simples por enquanto
         var damage = 10;
         oPlayer.playerHP -= damage;
         show_debug_message($"Inimigo atacou! Dano: {damage}");

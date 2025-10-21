@@ -1,5 +1,3 @@
-// oController - Step Event
-
 // Fullscreen
 if (keyboard_check_pressed(vk_f11)){
     window_set_fullscreen(!window_get_fullscreen());
@@ -16,7 +14,7 @@ if (keyboard_check_pressed(vk_f10)) {
     }
 }
 
-// Criar botões apenas durante o turno do jogador e quando não há matemática ativa
+// Criar botões apenas durante o turno do jogador e sem matemática ativa
 if (currentTurn == "player" && !buttonsCreated && !oMathController.active) {
     if (!instance_exists(oAddition)) {
         var addBtn = instance_create_layer(230, 265, "Buttons", oAddition);
@@ -34,7 +32,7 @@ if (currentTurn == "player" && !buttonsCreated && !oMathController.active) {
     buttonsCreated = true;
 }
 
-// Destruir botões quando o oMathController está ativo (jogador está resolvendo conta)
+// Destruir botões quando o oMathController está ativo e jogador resolvendo conta
 if (oMathController.active && buttonsCreated) {
     if (instance_exists(oAddition)) instance_destroy(oAddition);
     if (instance_exists(oSubtraction)) instance_destroy(oSubtraction);

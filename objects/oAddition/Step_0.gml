@@ -1,5 +1,3 @@
-// oAddition - Step Event
-
 if (position_meeting(mouse_x, mouse_y, self)) {
     click = mouse_check_button_pressed(mb_left);
 }
@@ -17,7 +15,7 @@ if (oPlayer.playerHP == oPlayer.playerMaxHP) {
 }
 
 if (click == 1) {
-    // Gerar números para adição (resultado entre 1 e 18)
+    // Gerar números para adição
     num1 = irandom_range(1, 9);
     num2 = irandom_range(1, 9);
     
@@ -32,6 +30,6 @@ if (click == 1) {
     oMathController.currentAction = "heal";
     oMathController.pendingMath = true;
     
-    // Resetar click para evitar múltiplos cliques
+    // Resetar click
     click = 0;
 }

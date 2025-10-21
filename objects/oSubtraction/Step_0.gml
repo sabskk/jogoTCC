@@ -1,5 +1,3 @@
-// oSubtraction - Step Event
-
 if (position_meeting(mouse_x, mouse_y, self)) {
     click = mouse_check_button_pressed(mb_left);
 }
@@ -15,7 +13,7 @@ if (oPlayer.playerMP < 5) {
 }
 
 if (click == 1) {
-    // Gerar números para subtração (resultado entre 0 e 9)
+    // Gerar números para subtração
     do {
         num1 = irandom_range(1, 9);
         num2 = irandom_range(0, num1); // num2 nunca será maior que num1
@@ -32,6 +30,6 @@ if (click == 1) {
     oMathController.currentAction = "attack";
     oMathController.pendingMath = true;
     
-    // Resetar click para evitar múltiplos cliques
+    // Resetar clic
     click = 0;
 }

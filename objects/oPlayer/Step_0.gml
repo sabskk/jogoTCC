@@ -1,5 +1,3 @@
-// oPlayer - Step Event
-
 if(!virando) image_angle -= 0.05;
 else if(virando)image_angle += 0.05;
 if(image_angle <= -3) virando = true;

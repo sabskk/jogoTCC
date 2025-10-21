@@ -42,8 +42,6 @@
     {"id":{"name":"oAddition","path":"objects/oAddition/oAddition.yy",},},
     {"id":{"name":"oBg","path":"objects/oBg/oBg.yy",},},
     {"id":{"name":"oBoss1","path":"objects/oBoss1/oBoss1.yy",},},
-    {"id":{"name":"oBoss2","path":"objects/oBoss2/oBoss2.yy",},},
-    {"id":{"name":"oBoss3","path":"objects/oBoss3/oBoss3.yy",},},
     {"id":{"name":"oController","path":"objects/oController/oController.yy",},},
     {"id":{"name":"oDivision","path":"objects/oDivision/oDivision.yy",},},
     {"id":{"name":"oFade","path":"objects/oFade/oFade.yy",},},
@@ -74,8 +72,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Combate1","path":"rooms/Combate1/Combate1.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"Combate1","path":"rooms/Combate1/Combate1.yy",},},
     {"roomId":{"name":"CutsceneStart","path":"rooms/CutsceneStart/CutsceneStart.yy",},},
     {"roomId":{"name":"Cutscene2","path":"rooms/Cutscene2/Cutscene2.yy",},},
     {"roomId":{"name":"CutsceneEnd","path":"rooms/CutsceneEnd/CutsceneEnd.yy",},},

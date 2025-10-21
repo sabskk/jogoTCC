@@ -1,5 +1,3 @@
-// oMultiplication - Step Event
-
 if (position_meeting(mouse_x, mouse_y, self)) {
     click = mouse_check_button_pressed(mb_left);
 }
@@ -13,7 +11,7 @@ if (oPlayer.playerMP == oPlayer.playerMaxMP) {
 }
 
 if (click == 1) {
-    // Gerar números para multiplicação (resultado até 81)
+    // Gerar números para multiplicação
     num1 = irandom_range(1, 9);
     num2 = irandom_range(1, 9);
     
@@ -28,6 +26,6 @@ if (click == 1) {
     oMathController.currentAction = "restore_mana";
     oMathController.pendingMath = true;
     
-    // Resetar click para evitar múltiplos cliques
+    // Resetar click
     click = 0;
 }

@@ -1,2 +1,4 @@
-play = 0;
-fade = 0;
+fade = false;
+fadeTimer = 5;
+
+alpha = 0;
