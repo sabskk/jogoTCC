@@ -12,6 +12,8 @@ if (oPlayer.playerMP < 10) {
 }
 
 if (click == 1) {
+	audio_play_sound(sndClick, 1, false);
+	
     // Gerar números para divisão
     do {
         result = irandom_range(1, 12); // Resultado entre 1 e 12
@@ -26,8 +28,8 @@ if (click == 1) {
     oMathController.num1 = num1;
     oMathController.num2 = num2;
     oMathController.result = result;
-    oMathController.operation = "%";
-    oMathController.currentAction = "strongAttack";
+    oMathController.operation = ":";
+    oMathController.currentAction = "strongAtk";
     oMathController.pendingMath = true;
     
     // Resetar click

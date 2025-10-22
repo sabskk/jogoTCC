@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemy1",
-    "path":"sprites/sEnemy1/sEnemy1.yy",
+    "name":"sBoss1",
+    "path":"sprites/sBoss1/sBoss1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

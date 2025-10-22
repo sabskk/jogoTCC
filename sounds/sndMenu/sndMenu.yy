@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sndMenu",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":88.514465,
+  "name":"sndMenu",
+  "parent":{
+    "name":"tcc dia 150925",
+    "path":"tcc dia 150925.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sndMenu.WAV",
+  "type":0,
+  "volume":0.8,
+}

@@ -15,6 +15,8 @@ if (oPlayer.playerHP == oPlayer.playerMaxHP) {
 }
 
 if (click == 1) {
+	audio_play_sound(sndClick, 1, false);
+	
     // Gerar números para adição
     num1 = irandom_range(1, 9);
     num2 = irandom_range(1, 9);

@@ -48,7 +48,7 @@ if (active) {
                 show_debug_message("Você errou e gastou 5 MP!");
             }
         }
-        else if (currentAction == "strongAttack") {
+        else if (currentAction == "strongAtk") {
             // Gasta mana sempre
             oPlayer.playerMP = max(0, oPlayer.playerMP - 10);
             

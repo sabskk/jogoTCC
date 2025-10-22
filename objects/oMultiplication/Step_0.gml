@@ -11,6 +11,8 @@ if (oPlayer.playerMP == oPlayer.playerMaxMP) {
 }
 
 if (click == 1) {
+	audio_play_sound(sndClick, 1, false);
+	
     // Gerar números para multiplicação
     num1 = irandom_range(1, 9);
     num2 = irandom_range(1, 9);
@@ -22,8 +24,8 @@ if (click == 1) {
     oMathController.num1 = num1;
     oMathController.num2 = num2;
     oMathController.result = result;
-    oMathController.operation = "*";
-    oMathController.currentAction = "restore_mana";
+    oMathController.operation = "x";
+    oMathController.currentAction = "mana";
     oMathController.pendingMath = true;
     
     // Resetar click

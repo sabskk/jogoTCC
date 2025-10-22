@@ -13,6 +13,8 @@ if (oPlayer.playerMP < 5) {
 }
 
 if (click == 1) {
+	audio_play_sound(sndClick, 1, false);
+	
     // Gerar números para subtração
     do {
         num1 = irandom_range(1, 9);
@@ -30,6 +32,6 @@ if (click == 1) {
     oMathController.currentAction = "attack";
     oMathController.pendingMath = true;
     
-    // Resetar clic
+    // Resetar click
     click = 0;
 }
