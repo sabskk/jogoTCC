@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sButton",
-    "path":"sprites/sButton/sButton.yy",
+    "name":"sCombate1",
+    "path":"sprites/sCombate1/sCombate1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

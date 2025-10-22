@@ -39,5 +39,6 @@ if (oController.currentTurn == "enemy") {
 if (enemyHP <= 0) {
     enemyHP = 0;
     show_debug_message("Inimigo derrotado!");
-	oController.boss1Defeat = true;
+	oFade.fade_state = 1;  // Start fading out
+	oFade.target_room = Menu;  // Set target room
 }

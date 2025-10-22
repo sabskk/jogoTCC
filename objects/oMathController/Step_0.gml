@@ -25,9 +25,8 @@ if (active) {
     
     // Enter para confirmar resposta
     if (keyboard_check_pressed(vk_enter) && playerAnswer != "") {
-        var playerNum = real(playerAnswer);
-        var actionSuccess = false;
-        
+		var playerNum = real(playerAnswer);
+		
         if (playerNum == result) {
             actionSuccess = true;
             show_debug_message($"Correto! {num1} {operation} {num2} = {result}");
@@ -41,7 +40,7 @@ if (active) {
             oPlayer.playerMP = max(0, oPlayer.playerMP - 5);
             
             if (actionSuccess) {
-                var damage = irandom_range(12, 20);
+                damage = irandom_range(12, 20);
                 oBoss1.enemyHP -= damage;
                 show_debug_message($"Você atacou! Dano: {damage}");
             } else {
@@ -53,7 +52,7 @@ if (active) {
             oPlayer.playerMP = max(0, oPlayer.playerMP - 10);
             
             if (actionSuccess) {
-                var damage = irandom_range(25, 35);
+                damage = irandom_range(25, 35);
                 oBoss1.enemyHP -= damage;
                 show_debug_message($"Ataque forte! Dano: {damage}");
             } else {
@@ -65,7 +64,7 @@ if (active) {
             oPlayer.playerMP = max(0, oPlayer.playerMP - 8);
             
             if (actionSuccess) {
-                var healing = irandom_range(20, 30);
+                healing = irandom_range(20, 30);
                 oPlayer.playerHP = min(oPlayer.playerMaxHP, oPlayer.playerHP + healing);
                 show_debug_message($"Você se curou! +{healing} HP");
             } else {
@@ -75,7 +74,7 @@ if (active) {
         else if (currentAction == "mana") {
             // Restaurar mana não gasta mana
             if (actionSuccess) {
-                var manaRestore = irandom_range(15, 25);
+                manaRestore = irandom_range(15, 25);
                 oPlayer.playerMP = min(oPlayer.playerMaxMP, oPlayer.playerMP + manaRestore);
                 show_debug_message($"Mana restaurada! +{manaRestore} MP");
             } else {
@@ -98,3 +97,4 @@ if (active) {
     }
 	
 }
+

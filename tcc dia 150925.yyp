@@ -69,6 +69,8 @@
     {"id":{"name":"sBoss2","path":"sprites/sBoss2/sBoss2.yy",},},
     {"id":{"name":"sBoss3","path":"sprites/sBoss3/sBoss3.yy",},},
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
+    {"id":{"name":"sCombate1","path":"sprites/sCombate1/sCombate1.yy",},},
+    {"id":{"name":"sCombate2","path":"sprites/sCombate2/sCombate2.yy",},},
     {"id":{"name":"sFade","path":"sprites/sFade/sFade.yy",},},
     {"id":{"name":"sLogo","path":"sprites/sLogo/sLogo.yy",},},
     {"id":{"name":"sMenu","path":"sprites/sMenu/sMenu.yy",},},

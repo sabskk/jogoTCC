@@ -51,3 +51,10 @@ if (currentTurn == "enemy" && buttonsCreated) {
     
     show_debug_message("Botões destruídos - Aguardando ação do inimigo");
 }
+
+//if (room == Combate1) {
+//	oAddition.sprite_index = sCombate1;
+//}
+//else if (room == Combate2) {
+//	oAddition.sprite_index = sCombate2;
+//}
