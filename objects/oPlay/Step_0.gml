@@ -11,5 +11,5 @@ if (click == 1){
             instance_create_layer(0, 0, "Instances", oTransition);  // Create if not exists
 	}
 	oFade.fade_state = 1;  // Start fading out
-	oFade.target_room = Combate1;  // Set target room
+	oFade.target_room = CutsceneStart;  // Set target room
 }

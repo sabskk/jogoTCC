@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndBattleTheme",
+  "%Name":"sndBattle1",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":394.37207,
-  "name":"sndBattleTheme",
+  "name":"sndBattle1",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndBattleTheme.mp3",
+  "soundFile":"sndBattle1.mp3",
   "type":1,
-  "volume":0.8,
+  "volume":0.25,
 }
