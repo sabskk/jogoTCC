@@ -8,8 +8,9 @@ if (click == 1){
 	audio_play_sound(sndClick, 1, false);
 	
 	if (!instance_exists(oFade)) {
-            instance_create_layer(0, 0, "Instances", oTransition);  // Create if not exists
+            instance_create_layer(0, 0, "Instances", oTransition); // Create if not exists
 	}
-	oFade.fade_state = 1;  // Start fading out
-	oFade.target_room = CutsceneStart;  // Set target room
+	oFade.fade_state = 1; // Start fading out
+	oFade.target_room = CutsceneStart; // Set target room
+	//oFade.target_room = Combate1;
 }

@@ -32,6 +32,7 @@ if (oController.currentTurn == "enemy") {
         // Passar turno de volta
         oController.currentTurn = "player";
         show_debug_message("=== TURNO PASSOU PARA O JOGADOR ===");
+		oController.buttonsCreated = false;
     }
 }
 

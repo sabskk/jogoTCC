@@ -2,6 +2,7 @@ active = false;
 pendingMath = false;
 playerAnswer = "";
 currentAction = "";
+actionSuccess = false;
 
 num1 = 0;
 num2 = 0;
