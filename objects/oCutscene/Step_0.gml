@@ -1,4 +1,4 @@
-if (skip_allowed && keyboard_check_pressed(vk_space)) {
+if (keyboard_check_pressed(vk_space)) {
     stage += 1;  // Go to next stage
     if (stage >= max_stages) {
         stage = max_stages;  // Ensure it ends properly
@@ -6,7 +6,7 @@ if (skip_allowed && keyboard_check_pressed(vk_space)) {
 }
 
 // Skip with SPACE (if allowed)
-if (skip_allowed && keyboard_check_pressed(vk_shift)) {
+if (keyboard_check_pressed(vk_shift)) {
     stage = max_stages;  // Jump to end
 }
 

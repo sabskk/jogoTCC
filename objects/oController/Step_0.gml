@@ -6,16 +6,16 @@ if (keyboard_check_pressed(vk_f11)){
 // Criar botões apenas durante o turno do jogador e sem matemática ativa
 if (currentTurn == "player" && !buttonsCreated && !oMathController.active) {
     if (!instance_exists(oAddition)) {
-        var addBtn = instance_create_layer(1, 265, "Buttons", oAddition);
+        var addBtn = instance_create_layer(224, 260, "Buttons", oAddition);
     }
 	if (!instance_exists(oSubtraction)) {
-        var subBtn = instance_create_layer(230, 320, "Buttons", oSubtraction);
+        var subBtn = instance_create_layer(224, 323, "Buttons", oSubtraction);
     }
     if (!instance_exists(oMultiplication)) {
-        var mulBtn = instance_create_layer(390, 265, "Buttons", oMultiplication);
+        var mulBtn = instance_create_layer(416, 260, "Buttons", oMultiplication);
     }
     if (!instance_exists(oDivision)) {
-        var divBtn = instance_create_layer(390, 320, "Buttons", oDivision);
+        var divBtn = instance_create_layer(416, 323, "Buttons", oDivision);
     }
     
     buttonsCreated = true;
