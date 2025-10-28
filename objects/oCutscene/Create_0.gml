@@ -6,6 +6,7 @@ max_stages = 6;  // Total stages (adjust per cutscene)
 typist = scribble_typist();
 typist.in(0.5, 0);
 
+// cutscene 1
 text1 = "[gameFont][fa_center][fa_middle]País de Rune Radiance, ano desconhecido...";
 text2 = "[gameFont][fa_center][fa_middle]Em [wave]Eldora[/wave], uma cidade conhecida por seu brilho mágico, acontece o [pulse]Torneio da Radiância.[/pulse]";
 text3 = "[gameFont][fa_center][fa_middle]Uma vez por ano, todos os bruxos e bruxas se reúnem para provar quem é o mais sábio, criativo e poderoso.";

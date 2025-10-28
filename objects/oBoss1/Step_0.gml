@@ -20,11 +20,40 @@ if (oController.currentTurn == "enemy") {
     if (actionTimer == 0) {
         show_debug_message("=== EXECUTANDO AÇÃO DO INIMIGO ===");
         
-        // Ação simples por enquanto
-        var damage = 10;
+        /*// Ação simples por enquanto
+        var damage = irandom_range(12, 20);
         oPlayer.playerHP -= damage;
+		enemyMP -= 5;
         show_debug_message($"Inimigo atacou! Dano: {damage}");
-        show_debug_message($"HP do jogador agora: {oPlayer.playerHP}");
+        show_debug_message($"HP do jogador agora: {oPlayer.playerHP}");*/
+		
+		if (enemyHP < enemyMaxMP * 0.4 && enemyMP >= 8) {
+			enemyMP -= 8;
+			healing = irandom_range(20, 30);
+			enemyHP = min(enemyMaxHP, enemyHP + healing);
+			show_debug_message($"Inimigo se curou! +{healing} HP");
+		}
+		else if (enemyMP < 15) {
+			manaRestore = irandom_range(15, 25);
+			enemyMP = min(enemyMaxMP, enemyMP + manaRestore);
+			show_debug_message($"Mana do inimigo restaurada! +{manaRestore} MP");
+		}
+		else if (enemyMP >= 10){
+			attack = irandom(1);
+			
+			if (attack == 0){
+				enemyMP -= 5;
+				damage = irandom_range(12, 20);
+                oPlayer.playerHP -= damage;
+                show_debug_message($"Você foi atacado! Dano: {damage}");
+			}
+			else if (attack == 1){
+				enemyMP -= 10;
+				damage = irandom_range(25, 35);
+                oPlayer.playerHP -= damage;
+                show_debug_message($"Ataque forte! Dano recebido: {damage}");
+			}
+		}
         
         // Resetar timer
         actionTimer = 0;

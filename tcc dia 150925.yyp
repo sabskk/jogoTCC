@@ -216,6 +216,7 @@
     {"id":{"name":"__shd_scribble","path":"shaders/__shd_scribble/__shd_scribble.yy",},},
     {"id":{"name":"sndBattle1","path":"sounds/sndBattle1/sndBattle1.yy",},},
     {"id":{"name":"sndClick","path":"sounds/sndClick/sndClick.yy",},},
+    {"id":{"name":"sndCutsceneStart","path":"sounds/sndCutsceneStart/sndCutsceneStart.yy",},},
     {"id":{"name":"sndMenu","path":"sounds/sndMenu/sndMenu.yy",},},
     {"id":{"name":"sBoss1","path":"sprites/sBoss1/sBoss1.yy",},},
     {"id":{"name":"sBoss2","path":"sprites/sBoss2/sBoss2.yy",},},

@@ -8,4 +8,5 @@ damage = 0;
 healing = 0;
 manaRestore = 0;
 
+attack = 0;
 virando = false;
