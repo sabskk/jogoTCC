@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMenu",
-    "path":"sprites/sMenu/sMenu.yy",
+    "name":"sMenu1",
+    "path":"sprites/sMenu1/sMenu1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

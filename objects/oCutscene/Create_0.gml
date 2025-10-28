@@ -1,6 +1,5 @@
-timer = 0;  // Counts frames (at 60 FPS, 60 = 1 second)
 stage = 0;  // Current part of cutscene (0 = start, 1 = text1, 2 = image, etc.)
-max_stages = 6;  // Total stages (adjust per cutscene)
+max_stages = 0;  // Total stages (adjust per cutscene)
 //skip_allowed = true;
 
 typist = scribble_typist();

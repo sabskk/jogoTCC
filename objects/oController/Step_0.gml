@@ -41,9 +41,19 @@ if (currentTurn == "enemy" && buttonsCreated) {
     show_debug_message("Botões destruídos - Aguardando ação do inimigo");
 }
 
-/*if (room == Combate1) {
-	oAddition.sprite_index = sCombate1;
-}
-else if (room == Combate2) {
-	oAddition.sprite_index = sCombate2;
+switch (room){
+	case Combate1:
+		oAddition.sprite_index = sCombate1;
+		oSubtraction.sprite_index = sCombate1;
+		oMultiplication.sprite_index = sCombate1;
+		oDivision.sprite_index = sCombate1;
+		oMenu.sprite_index = sMenu1;
+	break;
+	case Combate2:
+		oAddition.sprite_index = sCombate2;
+		oSubtraction.sprite_index = sCombate2;
+		oMultiplication.sprite_index = sCombate2;
+		oDivision.sprite_index = sCombate2;
+		oMenu.sprite_index = sMenu2;
+	break;
 }

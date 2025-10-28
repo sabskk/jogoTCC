@@ -27,7 +27,7 @@ switch (stage) {
 	break;
 }
 
-scribble("[gameFont][fa_center][scale,0.7][#515151]Avance com ESPAÇO | Pule com SHIFT").draw(center_x, room_height - 50);
+scribble("[gameFont][fa_center][scale,0.7][#1b1d2d]Avance com ESPAÇO | Pule com SHIFT").draw(center_x, room_height - 50);
 
 draw_self();
 draw_set_alpha(1);
