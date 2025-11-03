@@ -9,3 +9,5 @@ if (playerHP <= 0) {
 	oFade.fade_state = 1;  // Start fading out
 	oFade.target_room = Lose;  // Set target room
 }
+
+roomName = room_get_name(room);

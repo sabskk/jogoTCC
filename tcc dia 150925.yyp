@@ -235,6 +235,7 @@
     {"id":{"name":"sCombate2","path":"sprites/sCombate2/sCombate2.yy",},},
     {"id":{"name":"sCombate3","path":"sprites/sCombate3/sCombate3.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
+    {"id":{"name":"sCursor","path":"sprites/sCursor/sCursor.yy",},},
     {"id":{"name":"sCutS1","path":"sprites/sCutS1/sCutS1.yy",},},
     {"id":{"name":"sFade","path":"sprites/sFade/sFade.yy",},},
     {"id":{"name":"sLogo","path":"sprites/sLogo/sLogo.yy",},},
