@@ -22,11 +22,35 @@ switch (room){
 		}
 	break;
 	case Cutscene1:
-		max_stages = 5;  // Total stages (adjust per cutscene)
-		// End cutscene and transition
+		max_stages = 5;
+		
 		if (stage >= max_stages) {
-			oFade.fade_state = 1;  // Start fading out
-			oFade.target_room = Combate2;  // Set target room
+			oFade.fade_state = 1;
+			oFade.target_room = Combate2;
+		}
+	break;
+	case Cutscene2:
+		max_stages = 4;
+		
+		if (stage >= max_stages) {
+			oFade.fade_state = 1;
+			oFade.target_room = Cutscene3;
+		}
+	break;
+	case Cutscene3:
+		max_stages = 4;
+		
+		if (stage >= max_stages){
+			oFade.fade_state = 1;
+			oFade.target_room = Combate3;
+		}
+	break;
+	case CutsceneEnd:
+		max_stages = 5;
+		
+		if (stage >= max_stages) {
+			oFade.fade_state = 1;
+			oFade.target_room = Combate2;
 		}
 	break;
 }

@@ -1,0 +1,2 @@
+currentTurn = "player";
+buttonsCreated = true;
