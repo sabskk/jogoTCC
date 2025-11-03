@@ -15,9 +15,16 @@ else {
 }
 
 // Player com vida cheia ou sem mana
-if (oPlayer.playerHP == oPlayer.playerMaxHP) || (mana == 0){
+if (oPlayer.playerHP == oPlayer.playerMaxHP){
     draw_set_alpha(0.5);
-} else {
+}
+else if (mana == 0){
+    draw_set_alpha(0.5);
+	if (position_meeting(mouse_x, mouse_y, self)) {
+		buttonText = "[Sem Mana]";
+	}
+}
+else {
     draw_set_alpha(1);
 }
 

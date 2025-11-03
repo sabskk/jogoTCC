@@ -28,10 +28,19 @@ if (click == 1) {
     oMathController.num1 = num1;
     oMathController.num2 = num2;
     oMathController.result = result;
-    oMathController.operation = ":";
+    oMathController.operation = "÷";
     oMathController.currentAction = "strongAtk";
     oMathController.pendingMath = true;
     
     // Resetar click
     click = 0;
+}
+
+switch (room){
+	case Combate1:
+		sprite_index = sCombate1;
+	break;
+	case Combate2:
+		sprite_index = sCombate2;
+	break;
 }

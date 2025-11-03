@@ -5,16 +5,20 @@ draw_set_valign(fa_middle);
 draw_set_colour(c_white);
 
 if (position_meeting(mouse_x, mouse_y, self)) {
-	buttonText = "[10 MP]";
+	buttonText = "[15 MP]";
 }
 else {
-	buttonText = "At. Forte [%]";
+	buttonText = "At. Forte [÷]";
 }
 
 // Player sem mana
 if (mana == 0){
     draw_set_alpha(0.5);
-} else {
+	if (position_meeting(mouse_x, mouse_y, self)) {
+		buttonText = "[Sem Mana]";
+	}
+}
+else {
     draw_set_alpha(1);
 }
 
