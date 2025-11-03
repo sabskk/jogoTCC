@@ -6,6 +6,19 @@ if (pendingMath) {
     show_debug_message("Matemática ativada! Aguardando resposta...");
 }
 
+var boss;
+switch (room){
+	case Combate1:
+		boss = oBoss1;
+	break;
+	case Combate2:
+		boss = oBoss2;
+	break;
+	case Combate3:
+		boss = oBoss3;
+	break;
+}
+
 if (active) {
     // Input de número
     for (var i = 0; i <= 9; i++) {
@@ -40,8 +53,8 @@ if (active) {
             oPlayer.playerMP = max(0, oPlayer.playerMP - 5);
             
             if (actionSuccess) {
-                damage = irandom_range(12, 20);
-                oBoss1.enemyHP -= damage;
+                damage = irandom_range(10, 20);
+                boss.enemyHP -= damage;
                 show_debug_message($"Você atacou! Dano: {damage}");
             } else {
                 show_debug_message("Você errou e gastou 5 MP!");
@@ -49,11 +62,11 @@ if (active) {
         }
         else if (currentAction == "strongAtk") {
             // Gasta mana sempre
-            oPlayer.playerMP = max(0, oPlayer.playerMP - 10);
+            oPlayer.playerMP = max(0, oPlayer.playerMP - 15);
             
             if (actionSuccess) {
                 damage = irandom_range(25, 35);
-                oBoss1.enemyHP -= damage;
+                boss.enemyHP -= damage;
                 show_debug_message($"Ataque forte! Dano: {damage}");
             } else {
                 show_debug_message("Você errou e gastou 10 MP!");
@@ -95,6 +108,5 @@ if (active) {
         oController.currentTurn = "enemy";
         show_debug_message("Turno passou para o inimigo");
     }
-	
 }
 

@@ -14,7 +14,11 @@ else {
 // Player sem mana
 if (mana == 0){
     draw_set_alpha(0.5);
-} else {
+	if (position_meeting(mouse_x, mouse_y, self)) {
+		buttonText = "[Sem Mana]";
+	}
+}
+else {
     draw_set_alpha(1);
 }
 

@@ -35,3 +35,12 @@ if (click == 1) {
     // Resetar click
     click = 0;
 }
+
+switch (room){
+	case Combate1:
+		sprite_index = sCombate1;
+	break;
+	case Combate2:
+		sprite_index = sCombate2;
+	break;
+}

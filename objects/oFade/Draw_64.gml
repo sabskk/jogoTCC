@@ -1,5 +1,4 @@
 // oTransition - Draw GUI Event
-draw_self();
 if (fade_state > 0) {  // Only draw if fading
     draw_set_alpha(fade_alpha);
     draw_set_color(c_black);

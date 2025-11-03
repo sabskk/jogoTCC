@@ -7,4 +7,4 @@ var status_name_y = 15;
 var status_hp_y = status_name_y + 25;
 
 draw_text(x, status_name_y, "Lyra");
-draw_text(x, status_hp_y, "Hp:"+string(enemyHP)+" | Mp:"+string(enemyMP));
+draw_text(x, status_hp_y, "VP: "+string(enemyHP)+" | MP: "+string(enemyMP));
