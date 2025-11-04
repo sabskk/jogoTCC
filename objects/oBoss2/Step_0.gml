@@ -1,5 +1,5 @@
-if(!virando) image_angle += 0.05;
-else if(virando)image_angle -= 0.05;
+if(!virando) image_angle += 0.1;
+else if(virando)image_angle -= 0.1;
 if(image_angle >= 3) virando = true;
 else if(image_angle <= -3) virando = false;
 

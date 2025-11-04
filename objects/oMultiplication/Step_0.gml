@@ -39,4 +39,7 @@ switch (room){
 	case Combate2:
 		sprite_index = sCombate2;
 	break;
+	case Combate3:
+		sprite_index = sCombate3;
+	break;
 }

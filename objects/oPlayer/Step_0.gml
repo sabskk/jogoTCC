@@ -1,5 +1,17 @@
-if(!virando) image_angle -= 0.05;
-else if(virando)image_angle += 0.05;
+switch (room){
+	case Combate1:
+		if(!virando) image_angle -= 0.05;
+		else if(virando)image_angle += 0.05;
+	break;
+	case Combate2:
+		if(!virando) image_angle -= 0.1;
+		else if(virando)image_angle += 0.1;
+	break;
+	case Combate3:
+		if(!virando) image_angle -= 0.1;
+		else if(virando)image_angle += 0.1;
+	break;
+}
 if(image_angle <= -3) virando = true;
 else if(image_angle >= 3) virando = false;
 

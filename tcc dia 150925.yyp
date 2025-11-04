@@ -224,6 +224,7 @@
     {"id":{"name":"sndBattle1","path":"sounds/sndBattle1/sndBattle1.yy",},},
     {"id":{"name":"sndClick","path":"sounds/sndClick/sndClick.yy",},},
     {"id":{"name":"sndCutsceneStart","path":"sounds/sndCutsceneStart/sndCutsceneStart.yy",},},
+    {"id":{"name":"sndLose","path":"sounds/sndLose/sndLose.yy",},},
     {"id":{"name":"sndMenu","path":"sounds/sndMenu/sndMenu.yy",},},
     {"id":{"name":"sBackCutscene","path":"sprites/sBackCutscene/sBackCutscene.yy",},},
     {"id":{"name":"sBoss1","path":"sprites/sBoss1/sBoss1.yy",},},

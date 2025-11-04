@@ -1,2 +1,2 @@
-playerHP = 5;
+playerHP = 100;
 playerMP = 20;

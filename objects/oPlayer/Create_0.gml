@@ -1,5 +1,5 @@
-playerHP = 5;
-playerMaxHP = 5;
+playerHP = 100;
+playerMaxHP = 100;
 playerMP = 20;
 playerMaxMP = 20;
 

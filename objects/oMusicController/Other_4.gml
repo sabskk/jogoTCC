@@ -11,8 +11,8 @@ switch (room){
 		audio_stop_all();
 		audio_play_sound(sndBattle1, 0, true);
 	break;
-	/*case Cutscene1:
+	case Lose:
 		audio_stop_all();
-		audio_play_sound((sndCutscene1, 0, true);
-	break;*/
+		audio_play_sound(sndLose, 0, false);
+	break;
 }
