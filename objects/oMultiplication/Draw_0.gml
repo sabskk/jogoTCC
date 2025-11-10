@@ -14,7 +14,6 @@ else {
 	buttonText = "Mana [X]";
 }
 
-// Player sem mana
 if (oPlayer.playerMP == oPlayer.playerMaxMP){
     draw_set_alpha(0.5);
 } else {

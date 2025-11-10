@@ -11,7 +11,6 @@ else {
 	buttonText = "Ataque [-]";
 }
 
-// Player sem mana
 if (mana == 0){
     draw_set_alpha(0.5);
 	if (position_meeting(mouse_x, mouse_y, self)) {

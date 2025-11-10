@@ -8,7 +8,13 @@ else if(virando)image_angle -= 0.01;
 if(image_angle >= 1.5) virando = true;
 else if(image_angle <= -1.5) virando = false;
 
-// Fullscreen
 if (keyboard_check_pressed(vk_f11)){
     window_set_fullscreen(!window_get_fullscreen());
+}
+
+if (room == Menu){
+	sprite_index = sLogo;
+}
+else if (room == Lose){
+	sprite_index = sLoseLogo;
 }

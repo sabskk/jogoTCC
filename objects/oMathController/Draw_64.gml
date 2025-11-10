@@ -1,13 +1,13 @@
 if (active) {
 	// Posições do HUD
     var center_x = display_get_gui_width() / 2;
-    var hud_y = display_get_gui_height() - 122; // Start ~120px from bottom
+    var hud_y = display_get_gui_height() - 122; // Começa 120px de baixo
     
     // Centralizar texto
 	draw_set_font(gameFont);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_set_color(c_white); // Pergunta branca
+    draw_set_color(c_white);
 	
 	// Desenhar fundo quadrado atrás da pergunta
     var bg_sprite = sQuestion1;
@@ -18,7 +18,7 @@ if (active) {
 		bg_sprite = sQuestion3;
 	}
 	
-	// Dimensões da caixa
+	// Dimensões da caixa de texto
     var box_width = 300;
     var box_height = 100;
     var box_scale = 1;

@@ -14,7 +14,6 @@ else {
 	buttonText = "Cura [+]";
 }
 
-// Player com vida cheia ou sem mana
 if (oPlayer.playerHP == oPlayer.playerMaxHP){
     draw_set_alpha(0.5);
 }

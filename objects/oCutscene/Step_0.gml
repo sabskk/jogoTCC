@@ -3,13 +3,13 @@ if (keyboard_check_pressed(vk_f11)){
 }
 
 if (keyboard_check_pressed(vk_space)) {
-	stage += 1;  // Go to next stage
+	stage += 1;
 	if (stage >= max_stages) {
-		stage = max_stages;  // Ensure it ends properly
+		stage = max_stages;
 	}
 }
 else if (keyboard_check_pressed(vk_shift)) {
-	stage = max_stages;  // Jump to end
+	stage = max_stages;
 }
 
 switch (room){
@@ -50,7 +50,7 @@ switch (room){
 		
 		if (stage >= max_stages) {
 			oFade.fade_state = 1;
-			oFade.target_room = Combate2;
+			oFade.target_room = Menu;
 		}
 	break;
 }

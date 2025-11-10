@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":152.50867,
+  "duration":143.26712,
   "name":"sndCutsceneStart",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndCutsceneStart.mp3",
   "type":0,
-  "volume":0.7,
+  "volume":0.65,
 }

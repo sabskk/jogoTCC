@@ -17,9 +17,10 @@ else if(image_angle >= 3) virando = false;
 
 if (playerHP <= 0) {
 	playerHP = 0;
-    show_debug_message("Game Over!");
-	oFade.fade_state = 1;  // Start fading out
-	oFade.target_room = Lose;  // Set target room
+	oFade.fade_state = 1;
+	oFade.target_room = Lose;
 }
 
-roomName = room_get_name(room);
+if (room != Lose) {
+    global.roomName = room;
+}

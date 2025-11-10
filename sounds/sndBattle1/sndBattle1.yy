@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":394.37207,
+  "duration":108.51372,
   "name":"sndBattle1",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndBattle1.mp3",
   "type":1,
-  "volume":0.25,
+  "volume":0.7,
 }

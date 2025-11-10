@@ -1,6 +1,5 @@
-stage = 0;  // Current part of cutscene (0 = start, 1 = text1, 2 = image, etc.)
-max_stages = 0;  // Total stages (adjust per cutscene)
-//skip_allowed = true;
+stage = 0;
+max_stages = 0;
 
 typist = scribble_typist();
 typist.in(0.5, 0);

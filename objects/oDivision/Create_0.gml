@@ -9,5 +9,3 @@ num2 = 0;
 result = 0;
 
 buttonText = 0;
-
-show_debug_message($"Instância criada: {id}");
