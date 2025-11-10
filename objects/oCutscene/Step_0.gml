@@ -18,6 +18,14 @@ switch (room){
 		
 		if (stage >= max_stages) {
 			oFade.fade_state = 1;
+			oFade.target_room = Tutorial;
+		}
+	break;
+	case Tutorial:
+		max_stages = 9;
+		
+		if (stage >= max_stages) {
+			oFade.fade_state = 1;
 			oFade.target_room = Combate1;
 		}
 	break;

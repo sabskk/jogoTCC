@@ -15,6 +15,17 @@ switch (room){
 		text7 = "[gameFont][fa_center][fa_middle]Enquanto observa os outros competidores, Willow descobre algo inesperado: sua melhor amiga, [wave]Lyra[/wave], também se inscreveu.";
 		text8 = "[gameFont][fa_center][fa_middle]As duas riem da coincidência, até perceberem que vão se [shake]enfrentar.[/shake]";
 	break;
+	case Tutorial:
+		text1 = "[gameFont][fa_center][fa_middle][wave]- Tutorial -[/wave]";
+		text2 = "[gameFont][fa_center][fa_middle]Willow possui dois valores importantes. Seus [wave]VPs[/wave] e seus [wave]MPs.[/wave]";
+		text3 = "[gameFont][fa_center][fa_middle]Caso seus [wave]Pontos de Mana(MP)[/wave] cheguem à zero, Willow não poderá mais fazer suas magias.";
+		text4 = "[gameFont][fa_center][fa_middle]Caso isso aconteça, escolha [wave]Recuperar Mana![/wave]";
+		text5 = "[gameFont][fa_center][fa_middle]Caso meus [wave]Pontos de Vontade(VP)[/wave] cheguem à zero, Willow perderá a batalha.";
+		text6 = "[gameFont][fa_center][fa_middle]Caso seus VPs estejam baixos, escolha [wave]Recuperar Vida![/wave]";
+		text7 = "[gameFont][fa_center][fa_middle]Com seus MPs, Willow pode escolher entre dois outros tipos de magia, [wave]Ataque Fraco[/wave] e [wave]Ataque Forte.[/wave]";
+		text8 = "[gameFont][fa_center][fa_middle]Escolha bem! Cada magia gasta seus MPs.";
+		text9 = "[gameFont][fa_center][fa_middle]Boa sorte nas batalhas!";
+	break;
 	case Cutscene1:
 		text1 = "[gameFont][fa_center][fa_middle]O público [shake]vibra.[/shake] Willow e Lyra se encaram, divididas entre a [wave]amizade[/wave] e a [wave]competição.[/wave]";
 		text2 = "[gameFont][fa_center][fa_middle]A luta é intensa, cheia de truques criativos e risadas no meio das magias. Mas no fim, Willow [wave]vence[/wave] e Lyra sorri, [wave]orgulhosa.[/wave]";

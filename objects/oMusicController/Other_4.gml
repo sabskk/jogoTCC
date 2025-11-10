@@ -7,6 +7,10 @@ switch (room){
 		audio_stop_all();
 		audio_play_sound(sndCutsceneStart, 0, true);
 	break;
+	case Tutorial:
+		audio_stop_all();
+		audio_play_sound(sndTutorial, 0, true);
+	break;
 	case Combate1:
 		audio_stop_all();
 		audio_play_sound(sndBattle1, 0, true);

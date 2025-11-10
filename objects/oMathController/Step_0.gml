@@ -59,10 +59,10 @@ if (active) {
             }
         }
         else if (currentAction == "heal") {
-            oPlayer.playerMP = max(0, oPlayer.playerMP - 8);
+			oPlayer.playerMP = max(0, oPlayer.playerMP - 8);
             
             if (actionSuccess) {
-                healing = irandom_range(20, 30);
+				healing = irandom_range(20, 30);
                 oPlayer.playerHP = min(oPlayer.playerMaxHP, oPlayer.playerHP + healing);
             }
         }

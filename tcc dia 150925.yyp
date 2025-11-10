@@ -89,6 +89,7 @@
     {"id":{"name":"CutsceneStart","path":"rooms/CutsceneStart/CutsceneStart.yy",},},
     {"id":{"name":"Lose","path":"rooms/Lose/Lose.yy",},},
     {"id":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"id":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
     {"id":{"name":"__scribble_class_element","path":"scripts/__scribble_class_element/__scribble_class_element.yy",},},
     {"id":{"name":"__scribble_class_event","path":"scripts/__scribble_class_event/__scribble_class_event.yy",},},
     {"id":{"name":"__scribble_class_font","path":"scripts/__scribble_class_font/__scribble_class_font.yy",},},
@@ -231,6 +232,7 @@
     {"id":{"name":"sndCutsceneStart","path":"sounds/sndCutsceneStart/sndCutsceneStart.yy",},},
     {"id":{"name":"sndLose","path":"sounds/sndLose/sndLose.yy",},},
     {"id":{"name":"sndMenu","path":"sounds/sndMenu/sndMenu.yy",},},
+    {"id":{"name":"sndTutorial","path":"sounds/sndTutorial/sndTutorial.yy",},},
     {"id":{"name":"sBackCutscene","path":"sprites/sBackCutscene/sBackCutscene.yy",},},
     {"id":{"name":"sBoss1","path":"sprites/sBoss1/sBoss1.yy",},},
     {"id":{"name":"sBoss2","path":"sprites/sBoss2/sBoss2.yy",},},
@@ -270,6 +272,7 @@
     {"roomId":{"name":"CutsceneEnd","path":"rooms/CutsceneEnd/CutsceneEnd.yy",},},
     {"roomId":{"name":"Lose","path":"rooms/Lose/Lose.yy",},},
     {"roomId":{"name":"Cutscene3","path":"rooms/Cutscene3/Cutscene3.yy",},},
+    {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
